@@ -1,5 +1,6 @@
 <template>
   <div class="home h-full w-full md:h-screen text-white">
+    <NavBar class="py-2 md:text-2xl" title="Explore View" />
     <div class="p-3">
         <div class="pt-2 relative mx-auto text-gray-600">
           <input class="border-2 w-full border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
@@ -22,11 +23,13 @@
 
 <script>
 import CardGrid from '@/components/CardGrid.vue'
+import NavBar from '@/components/NavBar.vue'
 import jb from '../assets/JB.png'
 export default {
-  name: 'Explore',
+  name: 'ExploreView',
   components: {
-    CardGrid
+    CardGrid,
+    NavBar
   },
   data(){
         return {

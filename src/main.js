@@ -2,10 +2,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import './index.css'
-import VueSidebarMenuAkahon from "vue-sidebar-menu-akahon";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUser, faBell, faComments, faHouse, faLocationArrow } from '@fortawesome/free-solid-svg-icons'
+
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 Vue.config.productionTip = false
-Vue.component('vue-sidebar-menu-akahon', VueSidebarMenuAkahon);
+library.add(faUser, faBell, faComments, faHouse, faLocationArrow)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({
   router,

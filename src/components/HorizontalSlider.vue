@@ -14,7 +14,7 @@
 
             <div  v-if="type === 'upcoming' ">
                 <div class="h-full w-64 pr-3">
-                    <img class="h-40 w-full" :src="item.image">
+                    <img class="object-cover h-40 w-full" :src="item.image">
                     <div class="text-xs pt-2">
                         <p>{{item.title}}</p>
                         <p>{{item.place}}</p>

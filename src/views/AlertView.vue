@@ -1,8 +1,6 @@
 <template>
   <div class="home h-full w-full text-white">
-    <div class="p-5 text-center font-bold">
-        <p>Notifications</p>
-    </div>
+    <NavBar class="font-bold py-2 md:text-2xl" title="Notifications" />
     <div class="h-screen flex bg-black items-center justify-center">
         <p class="text-center text-xl">No notifications</p>
     </div>
@@ -10,9 +8,11 @@
 </template>
 
 <script>
+import NavBar from '@/components/NavBar.vue'
 export default {
-  name: 'Alert',
+  name: 'AlertView',
   components: {
+    NavBar
   },
   data(){
         return {

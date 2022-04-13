@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Explore from '../views/Explore.vue'
-import Feed from '../views/Feed.vue'
-import Alert from '../views/Alert.vue'
-import Profile from '../views/Profile.vue'
+import ExploreView from '../views/ExploreView.vue'
+import FeedView from '../views/FeedView.vue'
+import AlertView from '../views/AlertView.vue'
+import ProfileView from '../views/ProfileView.vue'
 
 Vue.use(VueRouter)
 
@@ -17,22 +17,22 @@ const routes = [
   {
     path: '/explore',
     name: 'explore',
-    component: Explore
+    component: ExploreView
   },
   {
     path: '/feed',
     name: 'feed',
-    component: Feed
+    component: FeedView
   },
   {
     path: '/alert',
     name: 'Alert',
-    component: Alert
+    component: AlertView
   },
   {
     path: '/profile',
     name: 'profile',
-    component: Profile
+    component: ProfileView
   },
 ]
 
