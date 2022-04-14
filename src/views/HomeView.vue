@@ -46,6 +46,7 @@
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex'
 import HorizontalSlider from '@/components/HorizontalSlider.vue'
 import CardGrid from '@/components/CardGrid.vue'
 import TrendingSlider from '@/components/TrendingSlider.vue'
@@ -85,6 +86,21 @@ export default {
             ],
         };
   },
+  computed: {
+        ...mapState({
+            account: state => state.account,
+            users: state => state.users.all
+        })
+    },
+    created () {
+        this.getAllUsers();
+    },
+    methods: {
+        ...mapActions('users', {
+            getAllUsers: 'getAll',
+            deleteUser: 'delete'
+        })
+    }
 }
 </script>
 

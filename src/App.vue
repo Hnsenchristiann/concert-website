@@ -50,7 +50,7 @@
       </div>
      </ul>
    </SideBar>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -63,7 +63,7 @@ export default {
   components: {
     // HelloWorld
     SideBar,
-  }
+  },
 }
 </script>
 
