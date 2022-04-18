@@ -47,6 +47,14 @@
             </div>
           </li>
         </div>
+        <div class="py-2">
+          <li class="flex h-10 hover:bg-white hover:text-black rounded-md items-center">
+            <div class="px-3">
+              <font-awesome-icon icon="fa-solid fa-gear" />
+              <a class="px-7" href="/settings">Settings</a>
+            </div>
+          </li>
+        </div>
       </div>
      </ul>
    </SideBar>
